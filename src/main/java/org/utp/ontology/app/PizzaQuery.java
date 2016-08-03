@@ -14,6 +14,7 @@ import org.apache.jena.query.QuerySolution;
 import org.apache.jena.query.ResultSet;
 import org.apache.jena.query.ResultSetFormatter;
 import org.apache.jena.vocabulary.OWL;
+import org.apache.jena.vocabulary.RDF;
 import org.apache.jena.vocabulary.RDFS;
 
 import com.github.jknack.handlebars.Handlebars;
@@ -42,8 +43,6 @@ public class PizzaQuery {
         Template template = handlebars.compile("templates/baseQuery");
         
         Map<String, Object> params = new HashMap<>();
-        params.put("rdfUri", RDFS.getURI());
-        params.put("owlUri", OWL.getURI());
         params.put("query", query);
         
         String baseQuery = template.apply(params);

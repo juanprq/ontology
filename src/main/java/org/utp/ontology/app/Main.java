@@ -37,7 +37,7 @@ public class Main {
         
         // Load the ontology.
         OntModel model = ModelFactory.createOntologyModel(OntModelSpec.OWL_MEM_MICRO_RULE_INF);
-        FileManager.get().readModel(model, "ontology/pizza.owl");
+        FileManager.get().readModel(model, "ontology/transporte.owl");
         
         // Configuration for the front web
         Spark.staticFiles.location("/css");
@@ -56,6 +56,7 @@ public class Main {
                     }
                     map.put("results", results);
                 } catch (Exception e) {
+                    e.printStackTrace();
                     logger.debug(e.getMessage());
                     map.put("error", "Ha ocurrido un error con la consulta SPARQL");
                 }

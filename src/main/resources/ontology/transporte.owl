@@ -1,0 +1,1149 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:transporte="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <Ontology rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#hasType -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#hasType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Ruta"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Transporte"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#TipoTransporte"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#tieneNaturaleza -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#tieneNaturaleza">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Transporte"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#NaturalezaPrestador"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#tieneTracción -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#tieneTracción">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Transporte"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Tracción"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#tieneTransporte -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#tieneTransporte">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Ruta"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Transporte"/>
+    </ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Altura_Maxima -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Altura_Maxima">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Intensidad -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Intensidad">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Eléctrico"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Longitud -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Longitud">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Ruta"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Tracción"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Motor -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Motor">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Número_compomentes -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Número_compomentes">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Potencia -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Potencia">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Tracción"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Profundidad_minima -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Profundidad_minima">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Recorrido -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Recorrido">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Ruta"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Valor_de_renta -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Valor_de_renta">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Renta"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Volumen -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Volumen">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Combustible"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#autonomía -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#autonomía">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#capacidad -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#capacidad">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#numero_llantas -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#numero_llantas">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#precio -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#precio">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Público"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#velocidad -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#velocidad">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#ACPM -->
+
+    <Class rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#ACPM">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Combustible"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Bandas -->
+
+    <Class rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Bandas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Humana"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Batería -->
+
+    <Class rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Batería">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Eléctrico"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Bio -->
+
+    <Class rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Bio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Combustible"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Cadenas -->
+
+    <Class rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Cadenas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Humana"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Combustible -->
+
+    <Class rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Combustible">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Mecánica"/>
+        <disjointWith rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Eléctrico"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Diesel -->
+
+    <Class rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Diesel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Combustible"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Eléctrico -->
+
+    <Class rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Eléctrico">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Mecánica"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Eólica -->
+
+    <Class rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Eólica">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Eléctrico"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Gas -->
+
+    <Class rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Gas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Combustible"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Gasolina -->
+
+    <Class rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Gasolina">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Combustible"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Humana -->
+
+    <Class rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Humana">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Tracción"/>
+        <disjointWith rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Mecánica"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Masivo -->
+
+    <Class rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Masivo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Público"/>
+        <disjointWith rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Personal"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Mecánica -->
+
+    <Class rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Mecánica">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Tracción"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#NaturalezaPrestador -->
+
+    <Class rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#NaturalezaPrestador"/>
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Particular -->
+
+    <Class rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Particular">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#NaturalezaPrestador"/>
+        <disjointWith rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Público"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Personal -->
+
+    <Class rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Personal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Público"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Piñones -->
+
+    <Class rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Piñones">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Humana"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Poleas -->
+
+    <Class rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Poleas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Humana"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Propio -->
+
+    <Class rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Propio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Particular"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Préstamo -->
+
+    <Class rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Préstamo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Particular"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Público -->
+
+    <Class rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Público">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#NaturalezaPrestador"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Remos -->
+
+    <Class rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Remos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Humana"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Renta -->
+
+    <Class rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Renta">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Particular"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Ruta -->
+
+    <Class rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Ruta"/>
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#RutaAcuática -->
+
+    <Class rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#RutaAcuática">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Ruta"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#hasType"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#TransporteTerrestre"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#tieneTransporte"/>
+                <someValuesFrom>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#balsa"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#barco"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#canoa"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#kajak"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#lancha"/>
+                        </unionOf>
+                    </Class>
+                </someValuesFrom>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#RutaAérea -->
+
+    <Class rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#RutaAérea">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Ruta"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#hasType"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#TransporteAéreo"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#tieneTransporte"/>
+                <someValuesFrom>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#avioneta"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#avión"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#cable"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#globo"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#helicoptero"/>
+                        </unionOf>
+                    </Class>
+                </someValuesFrom>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#RutaTerrestre -->
+
+    <Class rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#RutaTerrestre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Ruta"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#hasType"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#TransporteTerrestre"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#tieneTransporte"/>
+                <someValuesFrom>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#bicicleta"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#bus"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#camión"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#carro"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#metro"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#moto"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#tren"/>
+                        </unionOf>
+                    </Class>
+                </someValuesFrom>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Solar -->
+
+    <Class rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Solar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Eléctrico"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#TipoTransporte -->
+
+    <Class rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#TipoTransporte"/>
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Tracción -->
+
+    <Class rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Tracción"/>
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Transporte -->
+
+    <Class rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Transporte"/>
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#TransporteAcuático -->
+
+    <Class rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#TransporteAcuático">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#TipoTransporte"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#TransporteAéreo -->
+
+    <Class rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#TransporteAéreo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#TipoTransporte"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#TransporteTerrestre -->
+
+    <Class rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#TransporteTerrestre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#TipoTransporte"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Térmico -->
+
+    <Class rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Térmico">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Eléctrico"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#avioneta -->
+
+    <Class rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#avioneta">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Transporte"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#hasType"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#TransporteAéreo"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#tieneNaturaleza"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Particular"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#tieneTracción"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Combustible"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#avión -->
+
+    <Class rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#avión">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Transporte"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#hasType"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#TransporteAéreo"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#tieneNaturaleza"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Masivo"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#tieneTracción"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Combustible"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#balsa -->
+
+    <Class rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#balsa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Transporte"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#hasType"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#TransporteAcuático"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#tieneNaturaleza"/>
+                <someValuesFrom>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Particular"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Personal"/>
+                        </unionOf>
+                    </Class>
+                </someValuesFrom>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#tieneTracción"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Remos"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#barco -->
+
+    <Class rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#barco">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Transporte"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#hasType"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#TransporteAcuático"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#tieneNaturaleza"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Masivo"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#tieneTracción"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Diesel"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#bicicleta -->
+
+    <Class rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#bicicleta">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Transporte"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#hasType"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#TransporteTerrestre"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#tieneNaturaleza"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Personal"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#tieneTracción"/>
+                <someValuesFrom>
+                    <Class>
+                        <intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Cadenas"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Piñones"/>
+                        </intersectionOf>
+                    </Class>
+                </someValuesFrom>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#bus -->
+
+    <Class rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#bus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Transporte"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#hasType"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#TransporteTerrestre"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#tieneTracción"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Diesel"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#cable -->
+
+    <Class rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#cable">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Transporte"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#hasType"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#TransporteAéreo"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#tieneNaturaleza"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Personal"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#tieneTracción"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Eléctrico"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#camión -->
+
+    <Class rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#camión">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Transporte"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#hasType"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#TransporteTerrestre"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#tieneNaturaleza"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Particular"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#tieneTracción"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Diesel"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#canoa -->
+
+    <Class rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#canoa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Transporte"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#hasType"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#TransporteTerrestre"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#tieneNaturaleza"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Particular"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#tieneTracción"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Remos"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#carro -->
+
+    <Class rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#carro">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Transporte"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#hasType"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#TransporteTerrestre"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#tieneTracción"/>
+                <someValuesFrom>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Batería"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Bio"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Diesel"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Gas"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Gasolina"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Solar"/>
+                        </unionOf>
+                    </Class>
+                </someValuesFrom>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#globo -->
+
+    <Class rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#globo">
+        <rdfs:subClassOf>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Transporte"/>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#hasType"/>
+                        <someValuesFrom rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#TransporteAéreo"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#tieneNaturaleza"/>
+                        <someValuesFrom rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Particular"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#tieneTracción"/>
+                        <someValuesFrom rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Gas"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#helicoptero -->
+
+    <Class rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#helicoptero">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Transporte"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#hasType"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#TransporteAéreo"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#tieneNaturaleza"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Particular"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#tieneTracción"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Gasolina"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#kajak -->
+
+    <Class rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#kajak">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Transporte"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#hasType"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#TransporteAcuático"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#tieneNaturaleza"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Particular"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#tieneTracción"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Remos"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#lancha -->
+
+    <Class rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#lancha">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Transporte"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#hasType"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#TransporteAcuático"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#tieneNaturaleza"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Particular"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#tieneTracción"/>
+                <someValuesFrom>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Diesel"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Eléctrico"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Gasolina"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Remos"/>
+                        </unionOf>
+                    </Class>
+                </someValuesFrom>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#metro -->
+
+    <Class rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#metro">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Transporte"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#hasType"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#TransporteTerrestre"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#tieneNaturaleza"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Público"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#tieneTracción"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Eléctrico"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#moto -->
+
+    <Class rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#moto">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Transporte"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#hasType"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#TransporteTerrestre"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#tieneNaturaleza"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Particular"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#tieneTracción"/>
+                <someValuesFrom>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Batería"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Gasolina"/>
+                        </unionOf>
+                    </Class>
+                </someValuesFrom>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#tren -->
+
+    <Class rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#tren">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Transporte"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#hasType"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#TransporteTerrestre"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#tieneNaturaleza"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Masivo"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#tieneTracción"/>
+                <someValuesFrom>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Combustible"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Eléctrico"/>
+                        </unionOf>
+                    </Class>
+                </someValuesFrom>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#ArmeniaPereira -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#ArmeniaPereira">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#RutaTerrestre"/>
+        <transporte:Longitud rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</transporte:Longitud>
+    </NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#ACPM"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Bio"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Diesel"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Gas"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Gasolina"/>
+        </members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Bandas"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Cadenas"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Piñones"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Poleas"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Remos"/>
+        </members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Batería"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Eólica"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Solar"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Térmico"/>
+        </members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Propio"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Préstamo"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#Renta"/>
+        </members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#RutaAcuática"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#RutaAérea"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#RutaTerrestre"/>
+        </members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#TransporteAcuático"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#TransporteAéreo"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#TransporteTerrestre"/>
+        </members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#avioneta"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#avión"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#balsa"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#barco"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#bicicleta"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#bus"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#cable"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#camión"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#canoa"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#carro"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#globo"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#helicoptero"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#kajak"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#lancha"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#metro"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#moto"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/juanprq/ontologies/2016/4/transporte#tren"/>
+        </members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+
